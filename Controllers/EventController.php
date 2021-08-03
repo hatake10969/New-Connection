@@ -109,6 +109,12 @@ class EventController {
     return $count;
   }
 
+  // イベント作成者の情報を取得
+  public function findProfile($id) {
+    $result = $this->User->findProfile($id);
+    return $result;
+  }
+
   // イベント応募者のアイコンを取得
   public function apllied_icon() {
     $id = $_GET["id"];

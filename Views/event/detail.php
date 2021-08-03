@@ -41,6 +41,10 @@ if (substr($time[0], 0, 1) == "0") {
   $time[0] = mb_substr($time[0], 1);
 }
 
+// イベント作成者の情報を取得
+$id = $event_info["user_id"];
+$eventer = $event->findProfile($id);
+
 // コメント情報の取得
 $comment = new CommentController();
 $comments = $comment->get();
@@ -81,9 +85,12 @@ $comments = $comment->get();
           <p class="detail"><?= nl2br($event_info["content"]); ?></p>
           <p><span>参加人数</span></p>
           <p class="detail">現在 <?= $count + 1; ?>人 参加予定</p>
-          <p id="icons"><?php foreach ($icons as $value): ?>
-            <img src="/img/user_img/<?= $value['icon']?>" alt="" class="icon_img">
-          <?php endforeach ?></p>
+          <p id="icons">
+              <img src="/img/user_img/<?= $eventer['icon']?>" alt="" class="icon_img">
+            <?php foreach ($icons as $value): ?>
+              <img src="/img/user_img/<?= $value['icon']?>" alt="" class="icon_img">
+            <?php endforeach ?>
+          </p>
         </div>
 
         <div id="choices">
