@@ -13,38 +13,38 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|int|null: false|
-|nickname|string|null: false|
-|email|string|null: false, unique: true|
-|password|string|null: false|
-|icon|string|null: false|
-|role|int|null: false|
+|id|int|notnull|
+|nickname|string|notnull|
+|email|string|notnull, unique: true|
+|password|string|notnull|
+|icon|string|notnull|
+|role|int|notnull|
 
 ## eventsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|int|null: false|
-|name|string|null: false|
-|content|string|null: false|
-|place|string|null: false|
-|date|date|null: false|
-|time|time|null: false|
-|image|string|null: false|
-|user_id|int|null: false, foreign_key:true|
-|created_at|datetime|
+|id|int|notnull|
+|name|string|notnull|
+|content|string|notnull|
+|place|string|notnull|
+|date|date|notnull|
+|time|time|notnull|
+|image|string|notnull|
+|user_id|int|notnull, foreign_key:true|
+|created_at|datetime|notnull|
 
 ## event_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|int|null: false|
-|user_id|int|null:false, foreign_key: true|
-|event_id|int|null:false, foreign_key: true|
+|id|int|notnull|
+|user_id|int|notnull, foreign_key: true|
+|event_id|int|notnull, foreign_key: true|
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|int|null: false|
-|message|string|null: false|
-|user_id|int|null:false, foreign_key: true|
-|event_id|int|null:false, foreign_key: true|
-|created_at|datetime|
+|id|int|notnull|
+|message|string|notnull|
+|user_id|int|notnull, foreign_key: true|
+|event_id|int|notnull, foreign_key: true|
+|created_at|datetime|notnull|
