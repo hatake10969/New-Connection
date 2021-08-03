@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+#bgimg {
+  background-image: url("/img/1000.jpg");
+  background-blend-mode:lighten;
+  padding: 50px 0 50px;
+}
+#contents_wrapper {
+  background: rgba(247, 248, 248, 0.9);
+  border-radius: 5px;
+  padding: 60px 0;
+  margin: 0 auto;
+
+  min-height: calc(100vh - 300px);
+  width: 50%;
+  text-align: center;
+}
+#contents_wrapper h1 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+#contents_wrapper h1 span {
+  background:linear-gradient(transparent 75%, #ffbf7f 75%);
+  border-radius: 1px;
+}
+
+
+
+/* #contents_wrapper h1 {
+position: relative;
+  margin: 30px;
+  text-align: center;
+}
+#contents_wrapper h1:before,
+#contents_wrapper h1:after {
+  position: absolute;
+  z-index: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  border: 1em solid #d90606;
+}
+#contents_wrapper h1:before {
+  left: -30px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+#contents_wrapper h1:after {
+  right: -30px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}
+#contents_wrapper h1 span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #fa4141;
+}
+#contents_wrapper h1 span:before,
+#contents_wrapper h1 span:after {
+  position: absolute;
+  bottom: -10px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-style: solid;
+  border-color: #b70505 transparent transparent transparent;
+}
+#contents_wrapper h1 span:before {
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+#contents_wrapper h1 span:after {
+  right: 0;
+  border-width: 10px 10px 0 0;
+} */
+
+
+
+
+
+#event_image {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#image {
+  height: 100%;
+  /* width: 100%; */
+  object-fit: contain;
+  border: 3px solid black;
+}
+#event_details {
+  width: 80%;
+  margin: 15px auto;
+  text-align: left;
+}
+#event_details p {
+  margin-bottom: 3px;
+}
+#event_details span {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+#event_details .detail {
+  margin-bottom: 30px;
+}
+#icons {
+  display: flex;
+  justify-content: left;
+}
+.icon_img {
+  height: 30px;
+  width: 30px;
+  border: 1px solid orange;
+  margin-right: 5px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 応募・編集・削除ボタン */
+#contents_wrapper #choices {
+  padding-top: 30px;
+}
+#choices div {
+  height: 50px;
+}
+#choices .choice {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+#choices .choice:hover {
+  background-color: orange;
+}
+
+/* コメント表示・送信 */
+#comment_wrapper {
+  margin: 50px auto;
+}
+#attention {
+  font-weight: bold;
+  color: red;
+}
+#comment {
+  text-align: left;
+  padding: 20px 10%;
+}
+.comment_user {
+  display: flex;
+  align-items: center;
+}
+.user_image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name_info .user_name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background:linear-gradient(transparent 85%, #ffbf7f 85%);
+  border-radius: 1px;
+}
+.name_info .organizer {
+  color: orange;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.471);
+  font-size: 16px;
+}
+#comment_form {
+  padding: 50px 0;
+}
+#comment_input {
+  height: 25px;
+  width: 70%;
+}
+#comment_input:focus {
+  border: 2px solid orange;
+  outline: none;
+}
+#comment_btn {
+  background-color: white;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+#comment_btn:hover {
+  background-color: orange;
+}
+
+/* イベント作成ボタン */
+#create_wrapper {
+  text-align: center;
+}
+#create_btn {
+  height: 145px;
+  width: 145px;
+  border: 3px solid #582703;
+  border-radius: 50%;
+  /* background-color: rgb(200, 132, 5); */
+  background-color: #aa5519;
+  color: white;
+  text-shadow:1px 0 5px black;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#create_btn:hover {
+  background-color: orange;
+  text-shadow:1px 0 5px black;
+}
+#create_message {
+  position: fixed;
+  right: 45px;
+  bottom: 65px;
+}

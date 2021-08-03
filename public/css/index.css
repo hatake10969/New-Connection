@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+body {
+  background-color: #cf6920;
+  /* background-color: rgb(241, 248, 250); */
+}
+#main_header {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  /* margin: auto; */
+  /* overflow: hidden; */
+  border-bottom: 5px double #53290b;
+}
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 60s infinite;
+  background-size: 100% 450px;
+  background-repeat: no-repeat;
+}
+.src1 {
+  background-image: url("/img/1.jpg");
+}
+.src2 {
+  background-image: url("/img/7.jpg");
+  animation-delay  : 15s;
+}
+.src3 {
+  background-image: url("/img/2.jpg");
+  animation-delay  : 30s;
+}
+.src4 {
+  background-image: url("/img/4.jpg");
+  animation-delay  : 45s;
+}
+@keyframes bgAnime {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.boxString{
+  height: 60px;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  padding: 60px;
+  background: rgba(247, 248, 248, 0.8);
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+}
+#up {
+  font-size: 15px;
+  font-family: 'Osaka－等幅';
+  font-weight: bold;
+}
+#down {
+  font-size: 25px;
+  font-family: 'Osaka－等幅';
+  font-weight: bold;
+}
+
+#bgimg {
+  background-image: url("/img/1000.jpg");
+  background-blend-mode:lighten;
+  padding: 50px 0 50px;
+}
+#contents_wrapper {
+  background: rgba(247, 248, 248, 0.9);
+  border-radius: 5px;
+  min-height: calc(100vh - 300px);
+  width: 60%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+#contents_wrapper h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#contents_wrapper h1 span {
+  background:linear-gradient(transparent 75%, #ffbf7f 75%);
+  border-radius: 1px;
+}
+#keyword {
+  height: 30px;
+  width: 65%;
+}
+#keyword:focus {
+  border: 2px solid orange;
+  outline: none;
+}
+#search {
+  background-color: white;
+  height: 34px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+#search:hover {
+  text-shadow:1px 0 10px white;
+  background-color: rgb(246, 169, 27);
+  box-shadow: 0 0 5px rgb(58, 57, 57);
+}
+#order {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.order_choice {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.order_choice:hover {
+  text-shadow:1px 0 10px white;
+  /* background-color: #ce8d5f; */
+  background-color: rgb(246, 169, 27);
+  box-shadow: 0 0 5px rgb(58, 57, 57);
+}
+#left {
+  margin-right: 5%;
+}
+#right {
+  margin-left: 5%;
+}
+#popular {
+  display: none;
+}
+#new_arrival {
+  display: none;
+}
+#event_wrapper {
+  background-color: whitesmoke;
+  width: 65%;
+  margin: 50px auto;
+  border: 2px solid black;
+}
+#event_wrapper:hover {
+  box-shadow: 0 0 10px #53290b;
+}
+.event_link {
+  color: black;
+  text-decoration: none;
+}
+#event_image {
+  height: 300px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+#image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#event_details {
+  width: 90%;
+  margin: 5px auto;
+  text-align: left;
+}
+.event_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event_name span {
+  border-bottom: 3px solid orange;
+}
+
+/* イベント作成ボタン */
+#create_wrapper {
+  text-align: center;
+}
+#create_btn {
+  height: 145px;
+  width: 145px;
+  border: 3px solid #582703;
+  border-radius: 50%;
+  /* background-color: rgb(200, 132, 5); */
+  background-color: #aa5519;
+  color: white;
+  text-shadow:1px 0 5px black;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#create_btn:hover {
+  background-color: orange;
+  text-shadow:1px 0 5px black;
+}
+#create_message {
+  position: fixed;
+  right: 45px;
+  bottom: 65px;
+}
+
+/* 検索結果なし */
+#no_search h1{
+  color: red;
+  font-size: 23px;
+  margin-top: 100px;
+}
+
+/* 作成イベントなし */
+#not_created {
+  margin: 50px;
+}
+#first_event {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+#first_event:hover {
+  background-color: orange;
+  /* box-shadow: 0 0 10px rgb(58, 57, 57); */
+}

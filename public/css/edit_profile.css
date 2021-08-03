@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+#bgimg {
+  background-image: url("/img/1000.jpg");
+  background-blend-mode:lighten;
+  padding: 50px 0 50px;
+}
+#contents_wrapper {
+  background: rgba(247, 248, 248, 0.9);
+  border-radius: 5px;
+  padding: 60px 0;
+  margin: 0 auto;
+
+  min-height: calc(100vh - 300px);
+  width: 50%;
+  /* text-align: center; */
+}
+#contents_wrapper h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contents_wrapper h1 span {
+  background:linear-gradient(transparent 75%, #ffbf7f 75%);
+  border-radius: 1px;
+}
+#mypage_form {
+  width: 70%;
+  margin: auto;
+}
+.content_title {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.validation_message {
+  color: red;
+  font-size: 13px;
+}
+.input {
+  width: 100%;
+}
+#btn_wrapper {
+  width: 100%;
+  text-align: center;
+}
+#edit_btn {
+  margin: 50px;
+  padding: 5px 40px;
+}

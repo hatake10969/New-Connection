@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#footer_wrapper {
+  background-color: rgb(51, 50, 50);
+  color: white;
+  height: 140px;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #221104;
+}
+#footer_wrapper h1 {
+  font-size: 12px;
+  padding: 15px;
+}
+#footer_wrapper span {
+  font-size: 18px;
+  font-family: 'Comic Sans MS';
+}
+#footer_wrapper p {
+  font-size: 12px;
+}
